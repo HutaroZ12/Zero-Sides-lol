@@ -1,0 +1,9 @@
+[
+	{
+		"save": "newscoring",
+		"name": "New Scoring System",
+		"type": "bool",
+		"description": "<<< EXPERIMENTAL! >>>\nAdd the new scoring system in gameplay",
+		"value": true
+	},
+]
