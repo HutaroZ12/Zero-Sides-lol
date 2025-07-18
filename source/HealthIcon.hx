@@ -90,7 +90,7 @@ class HealthIcon extends FlxSprite
 				playAnim('normal');
 			} else {
 				if (iconMeta?.hasWinIcon || iSize == 3) {
-					loadGraphic(iconAsset, true, Math.floor(width / 3), Math.floor(height)); //Then load it fr // winning icons go br
+					loadGraphic(iconAsset, true, Math.floor(iconAsset.width / 3), Math.floor(iconAsset.height)); //Then load it fr // winning icons go br
 					initialWidth = width;
 					initialHeight = height;
 					iconOffsets[0] = (width - 150) / 3;
@@ -99,7 +99,7 @@ class HealthIcon extends FlxSprite
 
 					animation.add(char, [0, 1, 2], 0, false, isPlayer);
 				} else {
-					loadGraphic(iconAsset, true, Math.floor(width / 2), Math.floor(height)); //Then load it fr // winning icons go br
+					loadGraphic(iconAsset, true, Math.floor(iconAsset.width / 2), Math.floor(iconAsset.height)); //Then load it fr // winning icons go br
 					initialWidth = width;
 					initialHeight = height;
 					iconOffsets[0] = (width - 150) / 2;
