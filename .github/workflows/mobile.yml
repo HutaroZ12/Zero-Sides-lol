@@ -21,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@main
         with:
-          ref: 'main'
+          ref: 'mobile'
 
       - name: Setup Haxe
         uses: krdlab/setup-haxe@master
