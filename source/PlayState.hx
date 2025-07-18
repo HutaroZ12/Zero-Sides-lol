@@ -387,8 +387,18 @@ class PlayState extends MusicBeatState
 	var storyDifficultyText:String = "";
 	var detailsText:String = "";
 	var detailsPausedText:String = "";
-	#end
+        #end
 
+        ...
+
+        #if desktop
+          DiscordClient.changePresence(detailsText, SONG.song + " (" + storyDifficultyText + ")", iconP2.getCharacter());
+        #end
+
+        #if desktop
+          CoolUtil.resetResScale(width, height);
+        #end
+		
 	//Achievement shit
 	var keysPressed:Array<Bool> = [];
 	var boyfriendIdleTime:Float = 0.0;
