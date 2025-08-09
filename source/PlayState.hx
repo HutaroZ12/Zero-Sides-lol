@@ -34,6 +34,8 @@ import flixel.input.keyboard.FlxKey;
 
 import flixel.util.FlxSave;
 
+import flixel.FlxObject;
+
 import flixel.ui.FlxBar;
 
 import flixel.util.FlxSort;
@@ -13440,3 +13442,4 @@ class PlayState extends MusicBeatState
 
 
 }
+
